@@ -181,9 +181,6 @@ var main = function (input) {
     var playerBlackjack = checkBlackjack(playerHand);
     var dealerBlackjack = checkBlackjack(dealerHand);
 
-    // console.log("does player bj?", playerBlackjack);
-    // console.log("does dealer bj?", dealerBlackjack);
-
     if (playerBlackjack == true || dealerBlackjack == true) {
       if (playerBlackjack == true && dealerBlackjack == true) {
         outputMessage =
