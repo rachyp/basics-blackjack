@@ -252,7 +252,7 @@ var main = function (input) {
       ) {
         outputMessage =
           displayPlayerAndDealerHands(playerHand, dealerHand) +
-          "<br> it is a tie~ <br>" +
+          "<br> it is a tie~ <br> click on the 'submit' button to play another round <br> " +
           displayHandTotalValue(playerHandTotalValue, dealerHandTotalValue);
       } else if (
         (playerHandTotalValue > dealerHandTotalValue &&
@@ -261,12 +261,12 @@ var main = function (input) {
       ) {
         outputMessage =
           displayPlayerAndDealerHands(playerHand, dealerHand) +
-          "<br> player wins~ <br>" +
+          "<br> player wins~ <br> click on the 'submit' button to play another round <br>" +
           displayHandTotalValue(playerHandTotalValue, dealerHandTotalValue);
       } else {
         outputMessage =
           displayPlayerAndDealerHands(playerHand, dealerHand) +
-          "<br> dealer wins~ <br>" +
+          "<br> dealer wins~ <br> click on the 'submit' button to play another round <br> " +
           displayHandTotalValue(playerHandTotalValue, dealerHandTotalValue);
       }
       currentGameMode = gameStart;
