@@ -269,6 +269,9 @@ var main = function (input) {
           "<br> dealer wins~ <br>" +
           displayHandTotalValue(playerHandTotalValue, dealerHandTotalValue);
       }
+      currentGameMode = gameStart;
+      playerHand = [];
+      dealerHand = [];
     } else {
       outputMessage =
         'oops wrong input, please enter either "hit" or "stand" only <br><br> ' +
