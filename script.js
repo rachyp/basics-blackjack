@@ -229,6 +229,10 @@ var main = function (input) {
   if (currentGameMode == gameHitOrStand) {
     if (input == "hit") {
       playerHand.push(gameDeck.pop());
+      var playerHandTotalValue = calTotalHandValue(playerHand);
+      var dealerHandTotalValue = calTotalHandValue(dealerHand);
+      console.log("player hand value", playerHandTotalValue);
+      console.log("dealer hand value", dealerHandTotalValue);
       outputMessage =
         displayPlayerAndDealerHands(playerHand, dealerHand) +
         '<br> you drew a card, please enter either "hit" or "stand" to continue';
